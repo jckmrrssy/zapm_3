@@ -1,6 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { Feed } from './src/views'
+import { RoomFeed, Room } from './src/views'
 
 const Stack = createNativeStackNavigator()
 
@@ -9,9 +9,14 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen 
-          name="Feed"
-          component={Feed}
-          options={{ title: 'Home Feed'}}
+          name="RoomFeed"
+          component={RoomFeed}
+          options={{ title: 'Room Feed'}}
+        />
+        <Stack.Screen 
+          name="Room"
+          component={Room}
+          options={{ title: 'Room ${roomName}' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

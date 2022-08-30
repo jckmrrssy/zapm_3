@@ -1,1 +1,2 @@
-export { default as Feed } from './Feed/Feed' 
+export { default as RoomFeed } from './RoomFeed/RoomFeed'
+export { default as Room } from './Room/Room'
