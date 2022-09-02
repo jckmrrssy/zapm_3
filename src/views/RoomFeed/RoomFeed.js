@@ -21,7 +21,7 @@ const RoomFeed = ({ navigation }) => {
 			<Button
 				title="Go to Room"
 				onPress={() => {
-					navigation.navigate("Room", { foo: "JackTest"})
+					navigation.navigate("RoomDrawer", { foo: "JackTest"})
 				}}
 			/>
 		</React.Fragment>
