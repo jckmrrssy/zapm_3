@@ -18,30 +18,12 @@ const styles = StyleSheet.create({
 const Room = ({ navigation, route }) => {
 	console.log(route)
 	return (
-		<React.Fragment>
-		<Tab.Navigator>
-				{/* <Tab.Screen name="RoomFeedDrawer" component={RoomFeed} /> */}
-				<Tab.Screen name="RoomDrawer" component={Room} />
-				{/* <Stack.Navigator>
-					<Stack.Screen 
-						name="RoomFeedDrawer"
-						component={RoomFeed}
-						options={{ title: "Room Feed"}}
-					/>
-					<Stack.Screen 
-						name="RoomDrawer"
-						component={Room}
-						options={{ title: "Room ${roomName}" }}
-					/>
-				</Stack.Navigator> */}
-			</Tab.Navigator>
-
 		<View style={styles.container}>
 			<Text>IzzzaaRoommmmmm</Text>
 			{/* <Text>{route?.params.name}</Text> */}
 			<StatusBar style="auto" />
 		</View>
-		</React.Fragment>
+
 	)
 }
 
