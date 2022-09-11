@@ -1,10 +1,6 @@
 import { StatusBar } from "expo-status-bar"
 import React from "react"
 import { StyleSheet, View, Text } from "react-native"
-import { RoomFeed } from "../RoomFeed/RoomFeed"
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-
-const Tab = createBottomTabNavigator()
 
 const styles = StyleSheet.create({
 	container: {
@@ -15,11 +11,11 @@ const styles = StyleSheet.create({
 	},
 })
 
-const Room = ({ navigation, route }) => {
+const Standings = ({ navigation, route }) => {
 	console.log(route)
 	return (
 		<View style={styles.container}>
-			<Text>IzzzaaRoommmmmm</Text>
+			<Text>Standings View</Text>
 			{/* <Text>{route?.params.name}</Text> */}
 			<StatusBar style="auto" />
 		</View>
@@ -27,4 +23,4 @@ const Room = ({ navigation, route }) => {
 	)
 }
 
-export default Room
+export default Standings

@@ -11,11 +11,11 @@ const styles = StyleSheet.create({
 	},
 })
 
-const RoomFeed = ({ navigation }) => {
+const Chat = ({ navigation }) => {
 	return (
 		<React.Fragment>
 			<View style={styles.container}>
-				<Text>Jem#3 Room Feed (Home page)</Text>
+				<Text>Jem#3 Chat view Feed (Home page)</Text>
 				<StatusBar style="auto" />
 			</View>
 			<Button
@@ -28,4 +28,4 @@ const RoomFeed = ({ navigation }) => {
 	)
 }
 
-export default RoomFeed
+export default Chat

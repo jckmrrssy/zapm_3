@@ -1,2 +1,5 @@
-export { default as RoomFeed } from './RoomFeed/RoomFeed'
-export { default as Room } from './Room/Room'
+export { default as BetOfTheWeek } from "./BetOfTheWeek/BetOfTheWeek"
+export { default as Chat } from "./Chat/Chat"
+export { default as DraftResults } from "./DraftResults/DraftResults"
+export { default as Standings } from "./Standings/Standings"
+export { default as WeeklyMatchup } from "./WeeklyMatchup/WeeklyMatchup"

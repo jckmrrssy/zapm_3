@@ -1,21 +1,20 @@
 import React from "react"
 import { NavigationContainer } from "@react-navigation/native"
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import { createDrawerNavigator } from "@react-navigation/drawer"
-import { RoomFeed, Room } from "./src/views"
+import { BetOfTheWeek, Chat, DraftResults, Standings, WeeklyMatchup } from "./src/views/index"
 
-const Drawer = createDrawerNavigator()
-const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
 
 const App = () => {
 	return (
 		<NavigationContainer>
-			<Drawer.Navigator screenOptions={{ drawerPosition: "right" }}>
-				<Drawer.Screen name="RoomFeedDrawer" component={RoomFeed} />
-				<Drawer.Screen name="RoomDrawer" component={Room} />
-			</Drawer.Navigator>
+			<Tab.Navigator>
+				<Tab.Screen name="Standings" component={Standings} />
+				<Tab.Screen name="BetOfTheWeek" component={BetOfTheWeek} />
+				<Tab.Screen name="WeeklyMatchup" component={WeeklyMatchup} />
+				<Tab.Screen name="Chat" component={Chat} />
+				<Tab.Screen name="DraftResults" component={DraftResults} />
+			</Tab.Navigator>
 		</NavigationContainer>
 	)
 }
