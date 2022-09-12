@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { BetOfTheWeek, Chat, DraftResults, Standings, WeeklyMatchup } from "./src/views/index"
@@ -13,6 +13,7 @@ const App = () => {
 				<Tab.Screen name="BetOfTheWeek" component={BetOfTheWeek} />
 				<Tab.Screen name="WeeklyMatchup" component={WeeklyMatchup} />
 				<Tab.Screen name="Chat" component={Chat} />
+				{/* TODO: make this a "MORE" tab  */}
 				<Tab.Screen name="DraftResults" component={DraftResults} />
 			</Tab.Navigator>
 		</NavigationContainer>
