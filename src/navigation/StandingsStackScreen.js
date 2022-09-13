@@ -1,18 +1,17 @@
 import React from "react"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { StandingsList, StandingsDrilldown } from "../../components/index" 
+import { StandingsList, StandingsDrilldown } from "../views/index" 
 
 const StandingsStack = createNativeStackNavigator()
 
 
-//  TODO: Move each stack nav to a routing/nav folder instead? 
-const Standings = () => {
+const StandingsStackScreen = () => {
 	return (
 		<StandingsStack.Navigator>
-			<StandingsStack.Screen name="Standings" component={StandingsList} />
+			<StandingsStack.Screen name="StandingsList" component={StandingsList} />
 			<StandingsStack.Screen name="StandingsDrilldown" component={StandingsDrilldown} />
 		</StandingsStack.Navigator>
 	)
 }
 
-export default Standings
+export default StandingsStackScreen

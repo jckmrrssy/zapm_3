@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 	},
 })
 
-const Chat = ({ navigation }) => {
+const ChatStackScreen = ({ navigation }) => {
 	return (
 		<React.Fragment>
 			<View style={styles.container}>
@@ -22,4 +22,4 @@ const Chat = ({ navigation }) => {
 	)
 }
 
-export default Chat
+export default ChatStackScreen

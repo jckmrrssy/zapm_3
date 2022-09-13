@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { StatusBar } from "expo-status-bar"
 import { Button, View, Text, StyleSheet } from "react-native"
 
@@ -19,7 +20,7 @@ const StandingsList = ({ navigation }) => {
 			{/* <Text>{route?.params.name}</Text> */}
 			<StatusBar style="auto" />
 			<Button
-				title="Go to Room"
+				title="Go to drilldown"
 				onPress={() => {
 					navigation.navigate("StandingsDrilldown", { foo: "JackTest"})
 				}}

@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 	},
 })
 
-const BetOfTheWeek = ({ navigation, route }) => {
+const BettingStackScreen = ({ navigation, route }) => {
 	console.log(route)
 	return (
 		<View style={styles.container}>
@@ -23,4 +23,4 @@ const BetOfTheWeek = ({ navigation, route }) => {
 	)
 }
 
-export default BetOfTheWeek
+export default BettingStackScreen

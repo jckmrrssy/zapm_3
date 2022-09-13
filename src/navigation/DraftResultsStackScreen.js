@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 	},
 })
 
-const DraftResults = ({ navigation, route }) => {
+const DraftResultsStackScreen = ({ navigation, route }) => {
 	console.log(route)
 	return (
 		<View style={styles.container}>
@@ -23,4 +23,4 @@ const DraftResults = ({ navigation, route }) => {
 	)
 }
 
-export default DraftResults
+export default DraftResultsStackScreen

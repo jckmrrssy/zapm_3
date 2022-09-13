@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 	},
 })
 
-const WeeklyMatchup = ({ navigation, route }) => {
+const WeeklyMatchupStackScreen = ({ navigation, route }) => {
 	console.log(route)
 	return (
 		<View style={styles.container}>
@@ -23,4 +23,4 @@ const WeeklyMatchup = ({ navigation, route }) => {
 	)
 }
 
-export default WeeklyMatchup
+export default WeeklyMatchupStackScreen

@@ -1,5 +1,2 @@
-export { default as BetOfTheWeek } from "./BetOfTheWeek/BetOfTheWeek"
-export { default as Chat } from "./Chat/Chat"
-export { default as DraftResults } from "./DraftResults/DraftResults"
-export { default as Standings } from "./Standings/Standings"
-export { default as WeeklyMatchup } from "./WeeklyMatchup/WeeklyMatchup"
+export { default as StandingsList } from "./StandingsList/StandingsList"
+export { default as StandingsDrilldown } from "./StandingsDrilldown/StandingsDrilldown"
